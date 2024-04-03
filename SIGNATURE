@@ -1,0 +1,53 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.87.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: RIPEMD160
+
+SHA256 fe30958b14dd5282c14a8e8ac44bfbfee9dee6715fe4a31be9eb87d0abe023ce Changes
+SHA256 e9721661dbfb60dadebf3cd197cbc00239895aa73fb3431e19490cfad301cf99 LICENSE
+SHA256 8bcf6b6967c14de45e64f662e41415140d4b64f32880fd84d5d19e4efe6d6adc MANIFEST
+SHA256 298ee7f9342077a8545bac90e4e1c944cf76c94a6c37ff60b023aa82051c0b56 META.yml
+SHA256 ce07ba21999ed067a5aa92ce273ec71ad61d2b334886e89f30e673bbf86d1b14 Makefile.PL
+SHA256 39667ea95e9a5c841fabd7583321342fe1bf0fecab6aa3bed8024c2b759a9477 README
+SHA256 a21870889833868f76c1439c288a9eb1e3e1d007738a33354f00adf3429b77c2 TimeZone.pm
+SHA256 cd5397bbe618f5bbd4e12a33b0cf5d21114e771c2dbd0ce28e2135beb52c35a8 inc/Module/Install.pm
+SHA256 8bd506c33fb78f10f6451413e931ca23541fcc4eebe05fcb7c7c9577341223c4 inc/Module/Install/AuthorRequires.pm
+SHA256 1b5430a46a35142ef8914d8c745196fca825defc9dfa7e389299bf294613825e inc/Module/Install/AuthorTests.pm
+SHA256 798836f9ccb8d204b1be31fc3835631f57e9d818b21a8f0d14bfcfb82ff4a72a inc/Module/Install/Base.pm
+SHA256 d64cd4c16f83c5baf11f64a44bea3a0abc060a49da5aba040f0eb01394bf75ab inc/Module/Install/Can.pm
+SHA256 65d7a6098bf3f829e8c1c2865476d3537aa6f0ad0ffc9149e10812c856529043 inc/Module/Install/Fetch.pm
+SHA256 70c4b77acab3ff51dfb318110369607cb109e1c319459249623b787cf3859750 inc/Module/Install/Makefile.pm
+SHA256 14556386168007ce913e669fc08a332ccdb6140246fd55a90c879b5190c1b57a inc/Module/Install/Metadata.pm
+SHA256 53825bc78e4c910b888160bc148c8bc211be58e02b99c8edcbf4854f95faa049 inc/Module/Install/ReadmeFromPod.pm
+SHA256 4c746c02c5cc19bed4c352e76205b4adff4c45ce8310d71294e1b83c059659c2 inc/Module/Install/Win32.pm
+SHA256 d3d9b4583243c470ae895defa4c44564485b53693cba1c50ab0320768f443e97 inc/Module/Install/WriteAll.pm
+SHA256 4586ff80ed699fac392ef7e6d9f1020fd0c05c95f2815904e54a73d389e46a3b t/Mo-utils-TimeZone/01-use.t
+SHA256 ca95434dc7d1f940cad766074421228b4ffc725ad0b28bae1f3444070ebb2f2e t/Mo-utils-TimeZone/02-version.t
+SHA256 cee372d5afd54b3566ba30264dbf9d8c935ae0675336503b9ec7eef8bdf99f08 t/Mo-utils-TimeZone/03-check_timezone_iana.t
+SHA256 0c131f378cb8a5a7b27e5da3efbfe6578fba5e6e03c1c356bf6cfe30bc0ab581 xt/Mo-utils-TimeZone/01-pod_coverage.t
+SHA256 583d40f761b25482622d88c05a20b15038cf8532ab31296a24f600ca770d6fee xt/Mo-utils-TimeZone/02-pod.t
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBAwAdFiEEbhzVZugfHqSVNvE7YSp92FNcjtAFAmYNhN4ACgkQYSp92FNc
+jtDsaQwAusiq2Up7wUJ0w5TQ2I6yay8QnfTJB2CaRKg+g/9eCOjXuzaV+SBrGHzG
+I3sR5yNaxJ3/a5xdU010xzYL0MgYAG559i4MW7Gki+IkdYk5al7i6wJ5p2zHB8+Q
+qwwAGkzvDh8Zg7lnZXY+9JfuKrx1HIh1ocj0TSNYR5qhSHGFraIrkL0sTEWi2D2K
+BML/dcTdPVotErvv/fd7Wa1frlSVh4QPFVHTdv82n346QQVKsrg7AZeowxs6ULdF
+PkClRF6RY/cGGy97ZMco8x2TDzWq5jjdr+d1TSjntAEEtJ9iWC/yvUfktWTrACNE
+AA8vvAPACTMj32zOeJxklNjXrelpQTrzE8eaSSoRRt3pjfayV2CB6M8ObeoV0Mau
+z0LAs2xnA/ASRWyfkWLbIHMStEjN+mihwlCTjTM6JFj2fn3cSpvj2SNoCXhaVN88
+GhqxVzRowfuQ1spTnC9sk679I8pIUxZ4NaURP90SkVSQMKUOeKpSAEGJtVRQ3srj
+Nf9j7lPR
+=H547
+-----END PGP SIGNATURE-----
