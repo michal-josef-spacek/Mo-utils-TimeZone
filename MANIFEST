@@ -1,4 +1,6 @@
 Changes
+examples/check_timezone_iana_fail.pl
+examples/check_timezone_iana_ok.pl
 inc/Module/Install.pm
 inc/Module/Install/AuthorRequires.pm
 inc/Module/Install/AuthorTests.pm
