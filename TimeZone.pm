@@ -6,7 +6,6 @@ use warnings;
 
 use DateTime::TimeZone;
 use Error::Pure qw(err);
-use List::Util 1.33 qw(none);
 use Readonly;
 
 Readonly::Array our @EXPORT_OK => qw(check_timezone_iana);
@@ -18,7 +17,7 @@ sub check_timezone_iana {
 
 	_check_key($self, $key) && return;
 
-	if (none { $_ eq $self->{$key} } DateTime::TimeZone->all_names) {
+	if (! DateTime::TimeZone->is_valid_name($self->{$key})) {
 		err "Parameter '".$key."' doesn't contain valid IANA timezone code.",
 			'Value', $self->{$key},
 		;
@@ -124,7 +123,6 @@ Returns undef.
 L<DateTime::TimeZone>,
 L<Error::Pure>,
 L<Exporter>,
-L<List::Util>,
 L<Readonly>.
 
 =head1 SEE ALSO

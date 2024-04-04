@@ -61,7 +61,7 @@ EXAMPLE2
      # #Error [...utils.pm:?] Parameter 'key' doesn't contain valid IANA timezone code.
 
 DEPENDENCIES
-    DateTime::TimeZone, Error::Pure, Exporter, List::Util, Readonly.
+    DateTime::TimeZone, Error::Pure, Exporter, Readonly.
 
 SEE ALSO
     Mo  Micro Objects. Mo is less.

@@ -21,7 +21,6 @@ recursive_author_tests('xt');
 requires 'DateTime::TimeZone' => 0;
 requires 'Error::Pure' => 0.15;
 requires 'Exporter' => 0;
-requires 'List::Util' => 1.33;
 requires 'Readonly' => 0;
 resources 'bugtracker' => 'https://github.com/michal-josef-spacek/Mo-utils-TimeZone/issues',
 resources 'homepage' => 'https://github.com/michal-josef-spacek/Mo-utils-TimeZone';

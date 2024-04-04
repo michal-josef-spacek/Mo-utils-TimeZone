@@ -4,7 +4,7 @@ use warnings;
 use English;
 use Error::Pure::Utils qw(clean);
 use Mo::utils::TimeZone qw(check_timezone_iana);
-use Test::More 'tests' => 5;
+use Test::More 'tests' => 6;
 use Test::NoWarnings;
 
 # Test.
@@ -13,6 +13,13 @@ my $self = {
 };
 my $ret = check_timezone_iana($self, 'key');
 is($ret, undef, 'Right timezone is present (Europe/Prague).');
+
+# Test.
+$self = {
+	'key' => 'Europe/Bratislava',
+};
+$ret = check_timezone_iana($self, 'key');
+is($ret, undef, 'Right timezone is present (Europe/Bratislava).');
 
 # Test.
 $self = {
