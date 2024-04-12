@@ -2,7 +2,7 @@ use strict;
 use warnings;
 
 use English;
-use Error::Pure::Utils qw(clean);
+#use Error::Pure::Utils qw(clean);
 use Mo::utils::TimeZone qw(check_timezone_iana);
 use Test::More 'tests' => 6;
 use Test::NoWarnings;
@@ -43,4 +43,4 @@ eval {
 };
 is($EVAL_ERROR, "Parameter 'key' doesn't contain valid IANA timezone code.\n",
 	"Parameter 'key' doesn't contain valid IANA timezone code (foo).");
-clean();
+#clean();
