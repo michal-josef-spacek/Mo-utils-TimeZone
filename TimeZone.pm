@@ -17,7 +17,12 @@ sub check_timezone_iana {
 
 	_check_key($self, $key) && return;
 
-	if (! DateTime::TimeZone->is_valid_name($self->{$key})) {
+
+use Test::More;
+diag("Value: $self->{$key}");
+	my $foo = DateTime::TimeZone->is_valid_name($self->{$key});
+diag("Foo: $foo");
+	if (! $foo) {
 		err "Parameter '".$key."' doesn't contain valid IANA timezone code.",
 			'Value', $self->{$key},
 		;
