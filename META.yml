@@ -25,7 +25,7 @@ no_index:
     - t
     - xt
 requires:
-  DateTime::TimeZone: 0
+  DateTime::TimeZone: 2.62
   Error::Pure: 0.15
   Exporter: 0
   Readonly: 0
