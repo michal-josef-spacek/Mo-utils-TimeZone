@@ -2,13 +2,14 @@ use strict;
 use warnings;
 
 use English;
-use Error::Pure::AllError qw(err);
+use Error::Pure qw(err);
 use Error::Pure::Utils qw(clean);
 use Mo::utils::TimeZone qw(check_timezone_iana);
 use Test::More 'tests' => 6;
 use Test::NoWarnings;
 
 eval {
+	local $SIG{__DIE__};
 	err "1";
 };
 diag("Error: ".$EVAL_ERROR);
