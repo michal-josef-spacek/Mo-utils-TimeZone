@@ -2,10 +2,13 @@ use strict;
 use warnings;
 
 use English;
+use Error::Pure qw(err);
 use Error::Pure::Utils qw(clean);
 use Mo::utils::TimeZone qw(check_timezone_iana);
 use Test::More 'tests' => 6;
 use Test::NoWarnings;
+
+err "1";
 
 # Test.
 my $self = {
