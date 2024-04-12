@@ -8,7 +8,10 @@ use Mo::utils::TimeZone qw(check_timezone_iana);
 use Test::More 'tests' => 6;
 use Test::NoWarnings;
 
-err "1";
+eval {
+	err "1";
+};
+diag("Error: ".$EVAL_ERROR);
 
 # Test.
 my $self = {
