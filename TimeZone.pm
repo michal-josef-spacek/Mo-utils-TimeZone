@@ -5,6 +5,7 @@ use strict;
 use warnings;
 
 use DateTime::TimeZone;
+use DateTime::TimeZone::Europe::Prague;
 #use Error::Pure qw(err);
 use Readonly;
 
