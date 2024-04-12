@@ -2,23 +2,17 @@ use strict;
 use warnings;
 
 use English;
-use Error::Pure qw(err);
 use Error::Pure::Utils qw(clean);
 use Mo::utils::TimeZone qw(check_timezone_iana);
 use Test::More 'tests' => 6;
 use Test::NoWarnings;
 
-eval {
-	local $SIG{__DIE__};
-	err "1";
-};
-diag("Error: ".$EVAL_ERROR);
-
 # Test.
 my $self = {
 	'key' => 'Europe/Prague',
 };
-my $ret = check_timezone_iana($self, 'key');
+my $ret = eval { check_timezone_iana($self, 'key'); };
+diag("Error: ".$EVAL_ERROR);
 is($ret, undef, 'Right timezone is present (Europe/Prague).');
 
 # Test.
