@@ -5,7 +5,7 @@ use strict;
 use warnings;
 
 use DateTime::TimeZone;
-use Error::Pure qw(err);
+#use Error::Pure qw(err);
 use Readonly;
 
 Readonly::Array our @EXPORT_OK => qw(check_timezone_iana);
@@ -23,9 +23,10 @@ diag("Value: $self->{$key}");
 	my $foo = DateTime::TimeZone->is_valid_name($self->{$key});
 diag("Foo: $foo");
 	if (! $foo) {
-		err "Parameter '".$key."' doesn't contain valid IANA timezone code.",
-			'Value', $self->{$key},
-		;
+		die "Parameter '".$key."' doesn't contain valid IANA timezone code.";
+#		err "Parameter '".$key."' doesn't contain valid IANA timezone code.",
+#			'Value', $self->{$key},
+#		;
 	}
 
 	return;
