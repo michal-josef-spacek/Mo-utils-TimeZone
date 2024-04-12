@@ -2,6 +2,7 @@ use Test::More tests => 1;
 use Readonly;
 
 Readonly::Array our @MODULES => qw(
+	namespace::autoclean
 	DateTime::TimeZone::Catalog
 	DateTime::TimeZone::Floating
 	DateTime::TimeZone::Local;
@@ -15,6 +16,7 @@ Readonly::Array our @MODULES => qw(
 	Try::Tiny
 );
 
+diag("");
 foreach my $module (@MODULES) {
 	eval "require $module";
 	diag("Testing $module ".${"${module}::VERSION"});
