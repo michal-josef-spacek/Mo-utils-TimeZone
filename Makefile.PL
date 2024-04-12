@@ -18,6 +18,7 @@ name 'Mo-utils-TimeZone';
 perl_version 5.006002;
 readme_from 'TimeZone.pm';
 recursive_author_tests('xt');
+requires 'DateTime::Duration' => 0;
 requires 'DateTime::TimeZone' => 2.62;
 requires 'Error::Pure' => 0.15;
 requires 'Exporter' => 0;
