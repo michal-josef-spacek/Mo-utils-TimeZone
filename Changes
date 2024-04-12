@@ -1,4 +1,5 @@
 0.03
+ - Fix failing tests because missing DateTime::Duration.
 
 0.02 2024-04-04T09:53:49+02:00
  - Generate examples.
